@@ -491,7 +491,7 @@ while True:
     cv2.imshow("Canvas Pro", output)
     key = cv2.waitKey(1)
     # save canvas when 's' is pressed
-    if key == ord('s') and not save_pressed:
+    if key == ord('s') or key == ord('S') and not save_pressed:
 
         filename = f"screenshots/drawing_{save_count}.png"
 
